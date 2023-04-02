@@ -3,7 +3,7 @@ import ToDoForm from './ToDoForm'
 import { RiCloseCircleLine } from 'react-icons/ri'
 import ToDoList from './ToDoList'
 import { TiEdit } from 'react-icons/ti'
-function ToDo({ todos, completeToDo }) {
+function ToDo({ todos, completeToDo, removetodo }) {
     const [edit, setEdit] = useState({
         id: null,
         value: ''
@@ -14,8 +14,9 @@ function ToDo({ todos, completeToDo }) {
                 {ToDo.text}
             </div>
             <div className='icons'>
-                <RiCloseCircleLine />
-                <TiEdit />
+                <RiCloseCircleLine 
+                onClick={() => removetodo(ToDo.id)} className='delete-icon'/>
+                <TiEdit onClick={() => setEdit({id:ToDo.id, value: ToDo.text})} className='delete-icon' />
             </div>
         </div>
     ))

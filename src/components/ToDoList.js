@@ -12,6 +12,10 @@ export default function ToDoList() {
         setTodos(newTodos);
        
     }
+    const removetodo = id => {
+      const removArr = [...todos].filter(ToDo => ToDo.id !== id)
+      setTodos(removArr);
+    }
     const completeToDo = id =>{
       let updatedToDo = todos.map(todo => {
         if(todo.id === id){
@@ -28,7 +32,8 @@ export default function ToDoList() {
         <ToDoForm onSubmit={addToDo}/>
         <ToDo
          todos={todos} 
-         ccompleteToDo={completeToDo}/>
+         completeToDo={completeToDo}
+         removetodo={removetodo}/>
       
     </div>
   )
