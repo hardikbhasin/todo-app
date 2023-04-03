@@ -1,4 +1,13 @@
+# About
 *A To-Do web app built using basic React & React hooks, to create a to-do list. The edit option is available with each to-do to update, along with a option to remove from the list. Also, we can cross(line through) the particular to-do by dragging over it which is handeled using a particular function.*
+
+Below are the few screenshots of the react-app
+
+![Screenshot (192)](https://user-images.githubusercontent.com/107865928/229580075-be49dad1-9718-4bbc-8525-e7ce0fdaef1c.png)
+
+![Screenshot (195)](https://user-images.githubusercontent.com/107865928/229580151-99946645-6f5e-416d-8b06-f524cc73d4ee.png)
+
+![Screenshot (194)](https://user-images.githubusercontent.com/107865928/229580169-7797aceb-0179-42ff-b561-08491a1893d3.png)
 
 
 # Getting Started with Create React App
