@@ -19,7 +19,7 @@ function ToDo({ todos, completeToDo, removetodo,updatedToDo }) {
         return <ToDoForm edit={edit} onSubmit={submitupdate}></ToDoForm>
     }
     return todos.map((ToDo, index) => (
-        <div className={ToDo.isComplete ? 'todo-row complete' : 'todo-row'} key={index}>
+        <div className={ToDo.isComplete ? 'todo-row  complete' : 'todo-row'} key={index}>
             <div key={ToDo.id} onClick={() => completeToDo(ToDo.id)}>
                 {ToDo.text}
             </div>
