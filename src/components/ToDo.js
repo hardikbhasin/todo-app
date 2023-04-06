@@ -13,7 +13,7 @@ function ToDo({ todos, completeToDo, removetodo,updatedToDo }) {
         setEdit({
             id:null,
             value: ''
-        })
+        }) 
     }
     if(edit.id){
         return <ToDoForm edit={edit} onSubmit={submitupdate}></ToDoForm>
