@@ -43,6 +43,7 @@ export default function ToDoList() {
          todos={todos} 
          completeToDo={completeToDo}
          removetodo={removetodo}
+
          updatedToDo={updatedToDo}/>
       
     </div>
